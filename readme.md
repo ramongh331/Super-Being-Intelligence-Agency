@@ -4,18 +4,25 @@ description of my app
 
 ## Technologies Used
 
-- Tech 1
-- Tech 2
-- Tech 3
+- HTML
+- CSS
+- Javascript
+- jQuery
 
 ![alt text](url)
 
 ### Daily Plan
 
-| Day | Goal       |
-| --- | ---------- |
-| 1   | Day 1 Step |
-| 2   | Day 2 Step |
+| Day             | Plans/Steps                                                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Saturday 10/22  | Calling from API and inserting into DOM should be working                                                                                |
+| Sunday 10/23    | If Saturday is not finished, continue and finish. Start structuring DOM - Desktop                                                        |
+| Monday 10/24    | Get Desktop Structure Finished and Start Mobile Structure                                                                                |
+| Tuesday 10/25   | Hopefully finish Mobile Structure (Traveling for Work)                                                                                   |
+| Wednesday 10/26 | Need Desktop and Mobile Structures to be built. Test Functionality for both platforms. If both platforms are running, then start on CSS. |
+| Thursday 10/27  | Style both Platforms. Simple color scheme.                                                                                               |
+| Friday 10/28    | ALL CHECKS ON ALL Steps!!!! (Flying Home)                                                                                                |
+| Saturday 10/29  | You did it!                                                                                                                              |
 
 ### Link to Project
 
