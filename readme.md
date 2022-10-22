@@ -1,6 +1,6 @@
-# Name of my app
+# Hero/Villain Profiles
 
-description of my app
+Have you ever been watching a show or movie or reading a comic book and wanted to know more about one of the heros or villains? Now you can! Select the character from the drop down list then read all the info we have to provide.
 
 ## Technologies Used
 
@@ -32,4 +32,4 @@ description of my app
 
 ### Link to Project
 
-[My project live page](url)
+[Page is under construction](https://campnesher.org/wp-content/uploads/sites/7/2020/09/Under-Construction-Sign.png)
