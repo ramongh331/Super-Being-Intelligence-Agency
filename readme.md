@@ -8,6 +8,7 @@ Have you ever been watching a show or movie or reading a comic book and wanted t
 - CSS
 - Javascript
 - jQuery
+- https://superheroapi.com/
 
 ### Desktop Blueprint
 
