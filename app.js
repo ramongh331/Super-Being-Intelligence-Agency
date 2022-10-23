@@ -23,7 +23,7 @@ const $speed = $("#speed");
 const $durability = $("#durability");
 const $power = $("#power");
 const $combat = $("#combat");
-const $image = $("#hero-pic");
+const $imageDiv = $("#hero-pic");
 
 const $input = $("#herosDropDown");
 
@@ -70,12 +70,26 @@ function render() {
   $durability.text(superHeroData.powerstats.durability);
   $power.text(superHeroData.powerstats.power);
   $combat.text(superHeroData.powerstats.combat);
-  $image.html(`<img src="${superHeroData.image.url}">`);
+  $imageDiv.html(`<img src="${superHeroData.image.url}">`);
 
-  // change element style in javascript
+  // change element style with javascript (progress bars)
   const $intelligenceProgress = $("#intelligenceProgress");
   $intelligenceProgress.css(
     "width",
     superHeroData.powerstats.intelligence + "%"
   );
+  const $strengthProgress = $("#strengthProgress");
+  $strengthProgress.css("width", superHeroData.powerstats.strength + "%");
+
+  const $speedProgress = $("#speedProgress");
+  $speedProgress.css("width", superHeroData.powerstats.speed + "%");
+
+  const $durabilityProgress = $("#durabilityProgress");
+  $durabilityProgress.css("width", superHeroData.powerstats.durability + "%");
+
+  const $powerProgress = $("#powerProgress");
+  $powerProgress.css("width", superHeroData.powerstats.power + "%");
+
+  const $combatProgress = $("#combatProgress");
+  $combatProgress.css("width", superHeroData.powerstats.combat + "%");
 }
