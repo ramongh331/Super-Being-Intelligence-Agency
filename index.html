@@ -14,117 +14,121 @@
     <title>Project 1</title>
   </head>
   <body>
-    <main>
-      <h1>Super Hero API</h1>
-      <h3><span>Name:&nbsp;</span><span id="heroName"></span></h3>
-      <h3><span>ID:&nbsp;</span><span id="heroID"></span></h3>
-      <h3>
-        Biography:
-        <h4><span>Real Name:&nbsp;</span><span id="real-name"></span></h4>
-        <h4><span>Alter Ego(s):&nbsp;</span><span id="alter-ego"></span></h4>
+    <div class="grid">
+      <nav>
+        <h1>Super Hero API</h1>
+      </nav>
+      <main>
+        <h3><span>Name:&nbsp;</span><span id="heroName"></span></h3>
+        <h3><span>ID:&nbsp;</span><span id="heroID"></span></h3>
+        <h3>
+          Biography:
+          <h4><span>Real Name:&nbsp;</span><span id="real-name"></span></h4>
+          <h4><span>Alter Ego(s):&nbsp;</span><span id="alter-ego"></span></h4>
 
-        <h4><span>Aliases:&nbsp;</span><span id="alias"></span></h4>
+          <h4><span>Aliases:&nbsp;</span><span id="alias"></span></h4>
 
-        <h4>
-          <span>Place of Birth:&nbsp;</span><span id="birth-place"></span>
-        </h4>
+          <h4>
+            <span>Place of Birth:&nbsp;</span><span id="birth-place"></span>
+          </h4>
 
-        <h4>
-          <span>First Appearance:&nbsp;</span><span id="appearance"></span>
-        </h4>
+          <h4>
+            <span>First Appearance:&nbsp;</span><span id="appearance"></span>
+          </h4>
 
-        <h4><span>Publisher:&nbsp;</span><span id="publisher"></span></h4>
+          <h4><span>Publisher:&nbsp;</span><span id="publisher"></span></h4>
 
-        <h4><span>Alighnment:&nbsp;</span><span id="alignment"></span></h4>
-      </h3>
+          <h4><span>Alighnment:&nbsp;</span><span id="alignment"></span></h4>
+        </h3>
 
-      <h3>
-        Appearance:
-        <h4><span>Gender:&nbsp;</span><span id="gender"></span></h4>
-        <h4><span>Race:&nbsp;</span><span id="race"></span></h4>
-        <h4><span>Weight:&nbsp;</span><span id="weight"></span></h4>
-        <h4><span>Eye Color:&nbsp;</span><span id="eye-color"></span></h4>
-        <h4><span>Hair Color:&nbsp;</span><span id="hair-color"></span></h4>
-      </h3>
+        <h3>
+          Appearance:
+          <h4><span>Gender:&nbsp;</span><span id="gender"></span></h4>
+          <h4><span>Race:&nbsp;</span><span id="race"></span></h4>
+          <h4><span>Weight:&nbsp;</span><span id="weight"></span></h4>
+          <h4><span>Eye Color:&nbsp;</span><span id="eye-color"></span></h4>
+          <h4><span>Hair Color:&nbsp;</span><span id="hair-color"></span></h4>
+        </h3>
 
-      <h3>
-        Powerstats:
-        <h4><span>Intelligence:&nbsp;</span><span id="intelligence"></span></h4>
-        <div class="container">
-          <div id="intelligenceProgress"></div>
-        </div>
+        <h3>
+          Powerstats:
+          <h4>
+            <span>Intelligence:&nbsp;</span><span id="intelligence"></span>
+          </h4>
+          <div class="bar">
+            <div id="intelligenceProgress"></div>
+          </div>
 
-        <h4><span>Strength:&nbsp;</span><span id="strength"></span></h4>
-        <div class="bar">
-          <div id="strengthProgress"></div>
-        </div>
-        <h4><span>Speed:&nbsp;</span><span id="speed"></span></h4>
-        <div class="bar">
-          <div id="speedProgress"></div>
-        </div>
-        <h4><span>Durability:&nbsp;</span><span id="durability"></span></h4>
-        <div class="bar">
-          <div id="durabilityProgress"></div>
-        </div>
-        <h4><span>Power:&nbsp;</span><span id="power"></span></h4>
-        <div class="bar">
-          <div id="powerProgress"></div>
-        </div>
-        <h4><span>Combat:&nbsp;</span><span id="combat"></span></h4>
-        <div class="bar">
-          <div id="combatProgress"></div>
-        </div>
-      </h3>
-
+          <h4><span>Strength:&nbsp;</span><span id="strength"></span></h4>
+          <div class="bar">
+            <div id="strengthProgress"></div>
+          </div>
+          <h4><span>Speed:&nbsp;</span><span id="speed"></span></h4>
+          <div class="bar">
+            <div id="speedProgress"></div>
+          </div>
+          <h4><span>Durability:&nbsp;</span><span id="durability"></span></h4>
+          <div class="bar">
+            <div id="durabilityProgress"></div>
+          </div>
+          <h4><span>Power:&nbsp;</span><span id="power"></span></h4>
+          <div class="bar">
+            <div id="powerProgress"></div>
+          </div>
+          <h4><span>Combat:&nbsp;</span><span id="combat"></span></h4>
+          <div class="bar">
+            <div id="combatProgress"></div>
+          </div>
+        </h3>
+      </main>
       <div id="hero-pic"></div>
-    </main>
-    <aside>
-      <select id="herosDropDown">
-        <option value="">- Please choose -</option>
-        <option value="1">A-Bomb</option>
-        <option value="2">Abe Sapien</option>
-        <option value="3">Abin Sur</option>
-        <option value="4">Abomination</option>
-        <option value="5">Abraxas</option>
-        <option value="6">Absorbing Man</option>
-        <option value="7">Adam Monroe</option>
-        <option value="8">Adam Strange</option>
-        <option value="10">Agent Bob</option>
-        <option value="11">Agent Zero</option>
-        <option value="12">Ari-Walker</option>
-        <option value="13">Ajax</option>
-        <option value="14">Alan Scott</option>
-        <option value="15">Alex Mercer</option>
-        <option value="17">Alfred Pennyworth</option>
-        <option value="18">Alien</option>
-        <option value="20">Amazo</option>
-        <option value="23">Angel</option>
-        <option value="24">Angel</option>
-        <option value="25">Angel Dust</option>
-        <option value="26">Angel Salvadore</option>
-        <option value="28">Animal Man</option>
-        <option value="29">Annihilus</option>
-        <option value="30">Ant-Man</option>
-        <option value="31">Ant-Man II</option>
-        <option value="32">Anti-Monitor</option>
-        <option value="34">Anti-Venom</option>
-        <option value="35">Apocalypse</option>
-        <option value="36">Aquababy</option>
-        <option value="37">Aqualad</option>
-        <option value="38">Aquaman</option>
-        <option value="39">Arachne</option>
-        <option value="40">Archangel</option>
-        <option value="41">Arclight</option>
-        <option value="42">Ardina</option>
-        <option value="43">Ares</option>
-        <option value="44">Ariel</option>
-        <option value="45">Armor</option>
-        <option value="46">Arsenal</option>
-        <option value="47">Astro Boy</option>
-        <option value="48">Atlas</option>
-        <option value="49">Atlas</option>
-        <option value="50">Atom</option>
-        <option value="51">Atom</option>
+      <aside>
+        <select id="herosDropDown">
+          <option value="">- Please choose -</option>
+          <option value="1">A-Bomb</option>
+          <option value="2">Abe Sapien</option>
+          <option value="3">Abin Sur</option>
+          <option value="4">Abomination</option>
+          <option value="5">Abraxas</option>
+          <option value="6">Absorbing Man</option>
+          <option value="7">Adam Monroe</option>
+          <option value="8">Adam Strange</option>
+          <option value="10">Agent Bob</option>
+          <option value="11">Agent Zero</option>
+          <option value="12">Ari-Walker</option>
+          <option value="13">Ajax</option>
+          <option value="14">Alan Scott</option>
+          <option value="15">Alex Mercer</option>
+          <option value="17">Alfred Pennyworth</option>
+          <option value="18">Alien</option>
+          <option value="20">Amazo</option>
+          <option value="23">Angel</option>
+          <option value="24">Angel</option>
+          <option value="25">Angel Dust</option>
+          <option value="26">Angel Salvadore</option>
+          <option value="28">Animal Man</option>
+          <option value="29">Annihilus</option>
+          <option value="30">Ant-Man</option>
+          <option value="31">Ant-Man II</option>
+          <option value="32">Anti-Monitor</option>
+          <option value="34">Anti-Venom</option>
+          <option value="35">Apocalypse</option>
+          <option value="36">Aquababy</option>
+          <option value="37">Aqualad</option>
+          <option value="38">Aquaman</option>
+          <option value="39">Arachne</option>
+          <option value="40">Archangel</option>
+          <option value="41">Arclight</option>
+          <option value="42">Ardina</option>
+          <option value="43">Ares</option>
+          <option value="44">Ariel</option>
+          <option value="45">Armor</option>
+          <option value="46">Arsenal</option>
+          <option value="47">Astro Boy</option>
+          <option value="48">Atlas</option>
+          <option value="49">Atlas</option>
+          <option value="50">Atom</option>
+          <!-- <option value="51">Atom</option>
         <option value="52">Atom Girl</option>
         <option value="53">Atom II</option>
         <option value="54">Atom III</option>
@@ -270,10 +274,12 @@
         <option value="197"></option>
         <option value="198"></option>
         <option value="199"></option>
-        <option value="200"></option>
+        <option value="200"></option> -->
 
-        <option value="644">Superman</option>
-      </select>
-    </aside>
+          <option value="644">Superman</option>
+        </select>
+      </aside>
+      <footer>This is a footer</footer>
+    </div>
   </body>
 </html>
