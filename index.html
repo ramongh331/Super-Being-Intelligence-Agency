@@ -16,27 +16,263 @@
   <body>
     <main>
       <h1>Super Hero API</h1>
-      <h3 id="heroName">Name:</h3>
-      <h3 id="heroID">Id:</h3>
+      <h3><span>Name:&nbsp;</span><span id="heroName"></span></h3>
+      <h3><span>ID:&nbsp;</span><span id="heroID"></span></h3>
+      <h3>
+        Biography:
+        <h4><span>Real Name:&nbsp;</span><span id="real-name"></span></h4>
+        <h4><span>Alter Ego(s):&nbsp;</span><span id="alter-ego"></span></h4>
+
+        <h4><span>Aliases:&nbsp;</span><span id="alias"></span></h4>
+
+        <h4>
+          <span>Place of Birth:&nbsp;</span><span id="birth-place"></span>
+        </h4>
+
+        <h4>
+          <span>First Appearance:&nbsp;</span><span id="appearance"></span>
+        </h4>
+
+        <h4><span>Publisher:&nbsp;</span><span id="publisher"></span></h4>
+
+        <h4><span>Alighnment:&nbsp;</span><span id="alignment"></span></h4>
+      </h3>
+
+      <h3>
+        Appearance:
+        <h4><span>Gender:&nbsp;</span><span id="gender"></span></h4>
+        <h4><span>Race:&nbsp;</span><span id="race"></span></h4>
+        <h4><span>Weight:&nbsp;</span><span id="weight"></span></h4>
+        <h4><span>Eye Color:&nbsp;</span><span id="eye-color"></span></h4>
+        <h4><span>Hair Color:&nbsp;</span><span id="hair-color"></span></h4>
+      </h3>
+
       <h3>
         Powerstats:
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <h4><span>Intelligence:&nbsp;</span><span id="intelligence"></span></h4>
+        <div class="container">
+          <div id="intelligenceProgress"></div>
+        </div>
+
+        <h4><span>Strength:&nbsp;</span><span id="strength"></span></h4>
+        <div class="bar">
+          <div id="strengthProgress"></div>
+        </div>
+        <h4><span>Speed:&nbsp;</span><span id="speed"></span></h4>
+        <div class="bar">
+          <div id="speedProgress"></div>
+        </div>
+        <h4><span>Durability:&nbsp;</span><span id="durability"></span></h4>
+        <div class="bar">
+          <div id="durabilityProgress"></div>
+        </div>
+        <h4><span>Power:&nbsp;</span><span id="power"></span></h4>
+        <div class="bar">
+          <div id="powerProgress"></div>
+        </div>
+        <h4><span>Combat:&nbsp;</span><span id="combat"></span></h4>
+        <div class="bar">
+          <div id="combatProgress"></div>
+        </div>
       </h3>
-      <h3 id="bio">Bio:</h3>
-      <h3>Appearance:</h3>
-      <h3>Connections:</h3>
-      <img src="" alt="" />
+
+      <div id="hero-pic"></div>
     </main>
     <aside>
       <select id="herosDropDown">
         <option value="">- Please choose -</option>
-        <option value="644">Superman</option>
+        <option value="1">A-Bomb</option>
+        <option value="2">Abe Sapien</option>
+        <option value="3">Abin Sur</option>
+        <option value="4">Abomination</option>
+        <option value="5">Abraxas</option>
+        <option value="6">Absorbing Man</option>
+        <option value="7">Adam Monroe</option>
+        <option value="8">Adam Strange</option>
+        <option value="10">Agent Bob</option>
+        <option value="11">Agent Zero</option>
+        <option value="12">Ari-Walker</option>
+        <option value="13">Ajax</option>
+        <option value="14">Alan Scott</option>
+        <option value="15">Alex Mercer</option>
+        <option value="17">Alfred Pennyworth</option>
+        <option value="18">Alien</option>
+        <option value="20">Amazo</option>
+        <option value="23">Angel</option>
+        <option value="24">Angel</option>
+        <option value="25">Angel Dust</option>
+        <option value="26">Angel Salvadore</option>
+        <option value="28">Animal Man</option>
+        <option value="29">Annihilus</option>
+        <option value="30">Ant-Man</option>
+        <option value="31">Ant-Man II</option>
+        <option value="32">Anti-Monitor</option>
+        <option value="34">Anti-Venom</option>
+        <option value="35">Apocalypse</option>
+        <option value="36">Aquababy</option>
+        <option value="37">Aqualad</option>
+        <option value="38">Aquaman</option>
+        <option value="39">Arachne</option>
+        <option value="40">Archangel</option>
+        <option value="41">Arclight</option>
+        <option value="42">Ardina</option>
+        <option value="43">Ares</option>
+        <option value="44">Ariel</option>
+        <option value="45">Armor</option>
+        <option value="46">Arsenal</option>
+        <option value="47">Astro Boy</option>
+        <option value="48">Atlas</option>
+        <option value="49">Atlas</option>
+        <option value="50">Atom</option>
+        <option value="51">Atom</option>
+        <option value="52">Atom Girl</option>
+        <option value="53">Atom II</option>
+        <option value="54">Atom III</option>
+        <option value="55">Atom IV</option>
+        <option value="56">Aurora</option>
+        <option value="57">Azazel</option>
+        <option value="58">Azrael</option>
+        <option value="59">Aztar</option>
+        <option value="60">Bane</option>
+        <option value="61">Banshee</option>
+        <option value="62">Bantam</option>
+        <option value="63">Batgirl</option>
+        <option value="64">Batgirl</option>
+        <option value="65">Batgirl III</option>
+        <option value="66">Batgirl IV</option>
+        <option value="67">Batgirl V</option>
+        <option value="68">Batgirl VI</option>
+        <option value="69">Batman</option>
         <option value="70">Batman</option>
+        <option value="71">Batman II</option>
+        <option value="72">Battlestar</option>
+        <option value="73">Batwoman V</option>
+        <option value="74">Beak</option>
+        <option value="75">Beast</option>
+        <option value="76">Beast Boy</option>
+        <option value="77">Beetle</option>
+        <option value="78">Ben 10</option>
+        <option value="79">Beta Ray Bill</option>
+        <option value="80">Beyonder</option>
+        <option value="81">Big Barda</option>
+        <option value="82">Big Daddy</option>
+        <option value="83">Big Man</option>
+        <option value="84">Bill Harken</option>
+        <option value="85">Billy Kincaid</option>
+        <option value="86">Binary</option>
+        <option value="89">Bird-Man</option>
+        <option value="90">Bird-Man II</option>
+        <option value="91">Birdman</option>
+        <option value="92">Bishop</option>
+        <option value="93">Bizarro</option>
+        <option value="94">Black Abbott</option>
+        <option value="95">Black Adam</option>
+        <option value="96">Black Bolt</option>
+        <option value="97">Black Canary</option>
+        <option value="98">Black Canary</option>
+        <option value="99">Black Cat</option>
+        <option value="100">Black Fash</option>
+        <option value="101">Black Goliath</option>
+        <option value="102">Black Knight III</option>
+        <option value="103">Black Lightning</option>
+        <option value="104">Black Mamba</option>
+        <option value="105">Black Manta</option>
+        <option value="106">Black Panther</option>
+        <option value="107">Black Widow</option>
+        <option value="108">Black Widow II</option>
+        <option value="109">Blackout</option>
+        <option value="110">Blackwing</option>
+        <option value="111">Blackwulf</option>
+        <option value="112">Blade</option>
+        <option value="113">Blaquesmith</option>
+        <option value="114">Bling!</option>
+        <option value="115">Blink</option>
+        <option value="116">Blizzard</option>
+        <option value="117">Blizzard</option>
+        <option value="118">Blizzard II</option>
+        <option value="119">Blob</option>
+        <option value="120">Bloodaxe</option>
+        <option value="121">Bloodhawk</option>
+        <option value="122">Bloodwraith</option>
+        <option value="123">Blue Beetle</option>
+        <option value="124">Blue Beetle</option>
+        <option value="125">Blue Beetle II</option>
+        <option value="126">Blue Beetle III</option>
+        <option value="127">Boba Fett</option>
+        <option value="129">Bomb Queen</option>
+        <option value="130"></option>
+        <option value="131"></option>
+        <option value="132"></option>
+        <option value="133"></option>
+        <option value="134"></option>
+        <option value="135"></option>
+        <option value="136"></option>
+        <option value="137"></option>
+        <option value="138"></option>
+        <option value="139"></option>
+        <option value="140"></option>
+        <option value="141"></option>
+        <option value="142"></option>
+        <option value="143"></option>
+        <option value="144"></option>
+        <option value="145"></option>
+        <option value="146"></option>
+        <option value="147"></option>
+        <option value="148"></option>
+        <option value="149"></option>
+        <option value="150"></option>
+        <option value="151"></option>
+        <option value="152">Black Fash</option>
+        <option value="153">Black Goliath</option>
+        <option value="154"></option>
+        <option value="155"></option>
+        <option value="156"></option>
+        <option value="157"></option>
+        <option value="158"></option>
+        <option value="159"></option>
+        <option value="160"></option>
+        <option value="161"></option>
+        <option value="162"></option>
+        <option value="163"></option>
+        <option value="164"></option>
+        <option value="165"></option>
+        <option value="166"></option>
+        <option value="167"></option>
+        <option value="168"></option>
+        <option value="169"></option>
+        <option value="170"></option>
+        <option value="171"></option>
+        <option value="172"></option>
+        <option value="173"></option>
+        <option value="174"></option>
+        <option value="175"></option>
+        <option value="176"></option>
+        <option value="177"></option>
+        <option value="178"></option>
+        <option value="179"></option>
+        <option value="180"></option>
+        <option value="181"></option>
+        <option value="182"></option>
+        <option value="183"></option>
+        <option value="184"></option>
+        <option value="185"></option>
+        <option value="186"></option>
+        <option value="187"></option>
+        <option value="188"></option>
+        <option value="189"></option>
+        <option value="190"></option>
+        <option value="191"></option>
+        <option value="192"></option>
+        <option value="193"></option>
+        <option value="194"></option>
+        <option value="195"></option>
+        <option value="196"></option>
+        <option value="197"></option>
+        <option value="198"></option>
+        <option value="199"></option>
+        <option value="200"></option>
+
+        <option value="644">Superman</option>
       </select>
     </aside>
   </body>
