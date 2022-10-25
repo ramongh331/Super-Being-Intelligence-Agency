@@ -70,7 +70,7 @@ function render() {
   $durability.text(superHeroData.powerstats.durability);
   $power.text(superHeroData.powerstats.power);
   $combat.text(superHeroData.powerstats.combat);
-  $imageDiv.html(`<img src="${superHeroData.image.url}" id="">`);
+  $imageDiv.html(`<img src="${superHeroData.image.url}">`);
 
   // change element style with javascript (progress bars)
   const $intelligenceProgress = $("#intelligenceProgress");
@@ -78,6 +78,7 @@ function render() {
     "width",
     superHeroData.powerstats.intelligence + "%"
   );
+
   const $strengthProgress = $("#strengthProgress");
   $strengthProgress.css("width", superHeroData.powerstats.strength + "%");
 

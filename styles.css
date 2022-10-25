@@ -1,43 +1,45 @@
 .grid {
   display: grid;
-  grid-template-columns: 30% 1fr 1fr;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: auto 35% 35%;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas:
+    "nav nav nav"
+    "section main pictureDiv"
+    "footer footer footer";
 }
 
 nav {
-  grid-column: 1/4;
-  height: 100px;
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
 }
 
 main {
-  grid-column: 2;
-  grid-area: 2;
+  grid-area: main;
 }
 
-img {
-  grid-column: 3;
-  grid-row: 2;
-  height: 350px;
-}
-
-aside {
-  grid-column: 1;
-  grid-row: 2;
+div#hero-pic {
+  grid-area: pictureDiv;
 }
 
 footer {
-  grid-column: 1/4;
-  grid-row: 3;
+  grid-area: footer;
+}
+
+img {
+  height: 350px;
+}
+
+footer {
   font-size: 50px;
   text-align: center;
-  align-items: center;
 }
 
 #herosDropDown {
-  display: flex;
   height: 40px;
   width: 90%;
-  align-items: center;
   text-align-last: center;
   font-size: 20px;
 }
@@ -59,6 +61,8 @@ option {
   background-color: green;
   height: 100%;
   box-shadow: 0px 0px 40px 5px rgba(0, 128, 0, 0.6);
+  animation-name: intelligence;
+  animation-duration: 2s;
 }
 
 #strengthProgress {
@@ -89,4 +93,84 @@ option {
   background-color: blue;
   height: 100%;
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 255, 0.6);
+}
+
+@media (max-width: 1230px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10% 10% auto 10%;
+    grid-template-areas:
+      "nav nav"
+      "section main"
+      "pictureDiv main"
+      "footer footer";
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  select {
+    margin: 0 0 0 10px;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  div#hero-pic {
+    grid-area: pictureDiv;
+  }
+
+  img {
+    margin: 0 0 0 10px;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media (max-width: 1007px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: 10% 2% 2% auto auto 10%;
+    grid-template-areas:
+      "nav"
+      "section"
+      "heroName"
+      "pictureDiv"
+      "mainNoName"
+      "footer";
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  #heroName {
+    grid-area: heroName;
+  }
+
+  div#hero-pic {
+    grid-area: pictureDiv;
+  }
+
+  #mainNoName {
+    grid-area: mainNoName;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
