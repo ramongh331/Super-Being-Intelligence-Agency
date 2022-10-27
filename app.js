@@ -24,6 +24,7 @@ const $durability = $("#durability");
 const $power = $("#power");
 const $combat = $("#combat");
 const $imageDiv = $("#hero-pic");
+const $imageDivH3 = $("#hero-pic-h3");
 
 const $input = $("#herosDropDown");
 
@@ -71,6 +72,7 @@ function render() {
   $power.text(superHeroData.powerstats.power);
   $combat.text(superHeroData.powerstats.combat);
   $imageDiv.html(`<img src="${superHeroData.image.url}">`);
+  $imageDivH3.html(`<img src="${superHeroData.image.url}">`);
 
   // change element style with javascript (progress bars)
   const $intelligenceProgress = $("#intelligenceProgress");

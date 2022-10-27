@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&family=Sarabun&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
@@ -214,7 +221,10 @@
         </select>
       </section>
       <main>
-        <h3><span>Name:&nbsp;</span><span id="heroName"></span></h3>
+        <h3 id="h3Name">
+          <span class="nameLabel">Name:&nbsp;</span><span id="heroName"></span>
+        </h3>
+        <div id="hero-pic-h3"></div>
         <div id="mainNoName">
           <h3><span>ID:&nbsp;</span><span id="heroID"></span></h3>
           <h3>
@@ -243,7 +253,7 @@
           </h3>
           <h3>
             Powerstats:
-            <h4>
+            <h4 class="powerstats">
               <span>Intelligence:&nbsp;</span><span id="intelligence"></span>
             </h4>
             <div class="bar">
@@ -273,7 +283,7 @@
         </div>
       </main>
       <div id="hero-pic"></div>
-      <footer>This is a footer</footer>
+      <footer id="footer">This is a footer</footer>
     </div>
   </body>
 </html>
