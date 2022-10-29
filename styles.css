@@ -275,7 +275,7 @@ option {
 } */
 
 /* Galaxy S20 Ultra */
-@media (max-width: 412px) {
+@media (max-width: 420px) {
   .grid {
     display: flex;
     flex-direction: column;
