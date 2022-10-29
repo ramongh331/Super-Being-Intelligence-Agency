@@ -281,6 +281,9 @@ option {
     flex-direction: column;
   }
 
+  body {
+    margin: 0;
+  }
   select {
     margin-left: 19px;
   }
